@@ -78,10 +78,10 @@ class Currency {
         this.unit = unit;
         this.value = value;
     }
+
     async conversion() {
         try {
-            let apiKey = "cur_live_QibFADNuLxDZ0Sd0VvxDgkOVFCHd8KE0AmfqOcWc"
-            const response = await axios.get(`https://api.currencyapi.com/v3/latest?apikey=${apiKey}&currencies=EUR%2CUSD%2CDKK&base_currency=${this.unit}`);
+            const response = await axios.get(`https://api.currencyapi.com/v3/latest?apikey=${process.env.APIKEY}&currencies=EUR%2CUSD%2CDKK&base_currency=${this.unit}`);
             const rates = response.data.data;
             let currencyArray = Object.keys(rates).map(currencyCode => parseFloat(rates[currencyCode].value.toFixed(2)));
 
@@ -97,7 +97,7 @@ class Grades {
         this.unit = unit;
         this.value = value;
     }
-    async conversion() {
+    conversion() {
         let con = mysql.createConnection({
             host: process.env.HOST, // Your database host
             user: process.env.USER,
@@ -107,7 +107,7 @@ class Grades {
         let unit = this.unit;
         let value = this.value;
 
-        let result = await con.connect(function(err) {
+        con.connect(function(err) {
             if (err) throw err;
             if (unit == "US") {
                 let sql = mysql.format("SELECT cDenmark FROM converter.grades WHERE cUSA=?", [value])
@@ -127,7 +127,6 @@ class Grades {
                 return "Error: Unknown unit";
             }
         })
-        return result;
     }
 }
 
