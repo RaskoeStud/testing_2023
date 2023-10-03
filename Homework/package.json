@@ -2,7 +2,7 @@
   "name": "homework",
   "version": "1.0.0",
   "description": "",
-  "main": "calculator.js",
+  "main": "TDD.js",
   "scripts": {
     "test": "jest --coverage"
   },

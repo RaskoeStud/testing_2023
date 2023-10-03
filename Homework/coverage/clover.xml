@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1693039478903" clover="3.2.0">
-  <project timestamp="1693039478904" name="All files">
-    <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5" elements="30" coveredelements="30" complexity="0" loc="21" ncloc="21" packages="1" files="2" classes="2"/>
+<coverage generated="1695658077214" clover="3.2.0">
+  <project timestamp="1695658077214" name="All files">
+    <metrics statements="42" coveredstatements="41" conditionals="10" coveredconditionals="9" methods="9" coveredmethods="9" elements="61" coveredelements="59" complexity="0" loc="42" ncloc="42" packages="1" files="3" classes="3"/>
+    <file name="TDD.js" path="C:\Users\rkoef\Documents\Projects\Testing\testing_2023\Homework\TDD.js">
+      <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <line num="3" count="7" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="41" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="39" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="5" type="stmt"/>
+      <line num="9" count="34" type="stmt"/>
+      <line num="13" count="7" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="22" count="11" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="24" count="16" type="stmt"/>
+      <line num="25" count="3" type="stmt"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="27" count="3" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+    </file>
     <file name="calculator.js" path="C:\Users\rkoef\Documents\Projects\Testing\testing_2023\Homework\calculator.js">
-      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
       <line num="4" count="5" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
       <line num="12" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
+      <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="17" count="0" type="stmt"/>
       <line num="19" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="21" count="1" type="stmt"/>
       <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
     </file>
     <file name="roman_numerals.js" path="C:\Users\rkoef\Documents\Projects\Testing\testing_2023\Homework\roman_numerals.js">
       <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
